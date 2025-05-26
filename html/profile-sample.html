@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Profile</title>
+  <script src="https://kit.fontawesome.com/c577a5c707.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style-sample.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1 id="clock" style="color: black;">clock</h1>
+      <div>
+        <i class="fa-solid fa-pen-to-square" style="font-size: 40px; margin-right: 20px;"></i>
+        <i class="fa-solid fa-trash" style="font-size: 40px;"></i>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <img src="Jang_Woo_Jin.png" alt="Profile Picture" class="profile-pic" />
+      <div class="name">Jang Woo Jin</div>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-phone" style="font-size: 25px; color: orange"></i>010 9647 5127
+    </div>
+      <div class="card"><i class="fa-solid fa-bookmark" style="font-size: 25px; color: orange"></i> <span>Family</span></div>
+      <div class="card"><i class="fa-solid fa-bell" style="font-size: 25px; color: orange"></i><span> Birthday</span> 18 January</div>
+      <div class="card"><i class="fa-solid fa-envelope" style="font-size: 25px; color: orange"></i> xxxx@gmail.com</div>
+  </div>
+  <script>
+    var Target = document.getElementById("clock");
+    function clock(){
+    var today = new Date();
+
+    var hours = ('0' + today.getHours()).slice(-2);
+    var minutes = ('0' + today.getMinutes()).slice(-2);
+
+    var timeString = hours + ':' + minutes;
+
+    Target.innerText = `${hours}:${minutes}`
+    }
+    clock();
+    setInterval(clock, 1000);
+  </script>
+</body>
+</html>
