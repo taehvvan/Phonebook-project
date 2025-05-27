@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+}
+.container {
+  max-width: 398px;
+  height: 844px;
+  margin: 0 auto;
+  background-color: #efe3e3;
+  padding-bottom: 70px;
+  border: 2px solid black;
+  position: relative;
+}
+
+/* 상단 상태 바 */
+.status-bar {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.status-bar .add {
+  font-size: 24px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #000;
+}
+
+.clock {
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 3px 0;
+}
+
+.status-bar #clock {
+  line-height: 60px;
+  font-size: 24px;
+}
+
+/* 헤더 (Phone Book 텍스트) */
+.header {
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 내 프로필 섹션 */
+.my-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-top: 1px solid #e3b9b9;
+  border-bottom: 1px solid #e3b9b9;
+}
+
+/* 연락처 리스트 */
+.contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e3b9b9;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-phone {
+  font-size: 13px;
+  color: #444;
+}
+
+.call-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+
