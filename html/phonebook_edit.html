@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Profile</title>
+  <script src="https://kit.fontawesome.com/c577a5c707.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="phonebook_edit.css">
+</head>
+<body>
+  <div class="container" style="position: relative">
+    <div class="clock">
+      <span id="clock" style="color: black;">clock</span>
+    </div>
+    <div class="top-bar" style="justify-content: space-between;">
+      <div>
+        <a id="previousBtn"><i id="edit" class="fa-solid fa-arrow-left" style="font-size: 25px; margin-right: 20px;"></i></a>
+     </div>
+    <div>
+    <h1>Edit Contact</h1>
+    </div>
+  </div>
+
+  <div class="profile-section">
+    <img src="${contact.img}" alt="Profile Picture" class="profile-pic" id="img"/>
+    <div class="name"><span id="name"></span></div>
+  </div>
+
+  <div class="editCard">
+    <div class="editCard-content">
+      <h3>Name</h3>
+      <input type="text" id="editName" style="width: 250px;">
+    </div>
+    <div class="editCard-content">
+      <i class="fas fa-phone call-icon"></i>
+      <input type="text" id="editPhone" style="width: 250px;" placeholder="Phone">
+    </div>
+    <div class="editCard-content">
+      <div>
+        <i class="fa-solid fa-bookmark"></i>
+        <input type="text" id="editGroup" style="width: 120px;" placeholder="Family">
+      </div>
+      <div>
+        <i class="fa-solid fa-bell"></i>
+        <input type="text" id="editBirthday" style="width: 120px;" placeholder="Birthday">
+      </div>
+    </div>
+    <div class="editCard-content">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="text" id="editEmail" style="width: 250px;" placeholder="abcd@gmail.com">
+    </div>
+    <input type="submit" value="SAVE" class="editButton" id="saveBtn">
+  </div>
+  <script src="phonebook_edit.js"></script>
+</body>
+</html>

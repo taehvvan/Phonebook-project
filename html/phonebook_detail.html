@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Profile</title>
+  <script src="https://kit.fontawesome.com/c577a5c707.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="phonebook_detail.css">
+  
+</head>
+<body>
+  <div class="container">
+    <div class="clock">
+      <span id="clock" style="color: black;">clock</span>
+    </div>
+    <div class="top-bar" style="justify-content: space-between;">
+      <div>
+        <a id="previousBtn"><i id="edit" class="fa-solid fa-arrow-left" style="font-size: 25px; margin-right: 20px;"></i></a>
+      </div>
+      <div>
+        <a id="editBtn"><i id="edit" class="fa-solid fa-pen-to-square" style="font-size: 25px; margin-right: 20px;"></i></a>
+        <i class="fa-solid fa-trash" style="font-size: 25px;"></i>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <img src="${contact.img}" alt="Profile Picture" class="profile-pic" id="img"/>
+      <div class="name"><span id="name"></span></div>
+    </div>
+
+    <div class="card" id="phone">
+      <i class="fa-solid fa-phone" style="font-size: 25px; color: orange"></i><span id="phone">010 9647 5127</span>
+    </div>
+      <div class="card"><i class="fa-solid fa-bookmark" style="font-size: 25px; color: orange"></i> <span>Family</span></div>
+      <div class="card"><i class="fa-solid fa-bell" style="font-size: 25px; color: orange"></i><span> Birthday</span> 18 January</div>
+      <div class="card"><i class="fa-solid fa-envelope" style="font-size: 25px; color: orange"></i> xxxx@gmail.com</div>
+  </div>
+
+
+  <script src="phonebook_detail.js"></script>
+</body>
+</html>
