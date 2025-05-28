@@ -13,7 +13,7 @@
             <span id="clock" style="color: black;">clock</span>
         </div>
         <div class="top-bar" style="justify-content: space-between;">
-            <a id="previousBtn"><i id="edit" class="fa-solid fa-arrow-left" style="font-size: 25px; margin-right: 20px;"></i></a>
+            <a id="previousBtn"><i id="edit" class="fa-solid fa-arrow-left" style="font-size: 25px; margin-right: 20px; color: black;"></i></a>
             <h2>Add Contact</h2>
         </div>
 
@@ -49,6 +49,7 @@
             <input type="submit" value="SAVE" class="editButton" id="saveBtn">
         </div>
     </div>
+    
     <script>
         var Target = document.getElementById("clock");
         function clock(){
@@ -63,6 +64,8 @@
         }
         clock();
         setInterval(clock, 1000);
+
+        document.getElementById("previousBtn").href = "phonebook.html"
     </script>
 </body>
 </html>
