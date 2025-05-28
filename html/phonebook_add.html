@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c577a5c707.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="phonebook_add.css">
+</head>
+<body>
+    <div class="container" style="position: relative">
+        <div class="clock">
+            <span id="clock" style="color: black;">clock</span>
+        </div>
+        <div class="top-bar" style="justify-content: space-between;">
+            <a id="previousBtn"><i id="edit" class="fa-solid fa-arrow-left" style="font-size: 25px; margin-right: 20px;"></i></a>
+            <h2>Add Contact</h2>
+        </div>
+
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="profile" />
+        </div>
+
+        <div class="group">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter name" />
+            </div>
+            <div class="form-group">
+                <label for="number">Number</label>
+                <input id="number" type="text" placeholder="Enter number" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="Enter email" />
+            </div>
+            <div class="form-group">
+                <label for="tag">Tags</label>
+                <select id="tag">
+                    <option value="Family">Family</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Work">Work</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input id="birthday" type="date" />
+            </div>
+            <input type="submit" value="SAVE" class="editButton" id="saveBtn">
+        </div>
+    </div>
+    <script>
+        var Target = document.getElementById("clock");
+        function clock(){
+            var today = new Date();
+
+            var hours = ('0' + today.getHours()).slice(-2);
+            var minutes = ('0' + today.getMinutes()).slice(-2);
+
+            var timeString = hours + ':' + minutes;
+
+            Target.innerText = `${hours}:${minutes}`
+        }
+        clock();
+        setInterval(clock, 1000);
+    </script>
+</body>
+</html>
