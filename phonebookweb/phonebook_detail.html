@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연락처 상세 - Phone Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="phonebook_detail.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="phonebook.html" class="logo"><i class="fa fa-address-book"></i> Phone Book</a>
+    </div>
+    <div class="navbar-center"></div>
+    <div class="navbar-right">
+      <div class="clock" id="clock">00:00</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="My Profile">
+      </div>
+    </div>
+  </nav>
+  <main class="main-bg">
+    <section class="detail-section">
+      <div class="detail-card">
+        <div class="detail-img-wrap">
+          <img id="img" class="detail-img" src="" alt="프로필 이미지">
+        </div>
+        <div class="detail-info">
+          <h2 id="name" class="detail-name">이름</h2>
+          <div class="detail-row">
+            <span class="detail-label"><i class="fa fa-phone"></i> 전화번호</span>
+            <span id="phone" class="detail-value">-</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label"><i class="fa fa-users"></i> 그룹</span>
+            <span id="group" class="detail-value">-</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label"><i class="fa fa-birthday-cake"></i> 생일</span>
+            <span id="birthday" class="detail-value">-</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label"><i class="fa fa-envelope"></i> 이메일</span>
+            <span id="email" class="detail-value">-</span>
+          </div>
+          <div class="detail-actions">
+            <a id="previousBtn" href="phonebook.html" class="btn btn-back"><i class="fa fa-arrow-left"></i> 목록</a>
+            <a id="editBtn" href="#" class="btn btn-edit"><i class="fa fa-edit"></i> 수정</a>
+            <button id="deleteBtn" type="button" class="btn btn-delete"><i class="fa fa-trash"></i> 삭제</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="phonebook_detail.js"></script>
+</body>
+</html>
