@@ -121,7 +121,8 @@ input, select {
     margin-top: 15px;
 }
 
-.editButton {
+.editButton,
+.addButton {
     position: absolute; 
     bottom: 50px;
     width: 330px;
