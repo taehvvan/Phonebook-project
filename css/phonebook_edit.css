@@ -36,6 +36,34 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+.group{
+    margin: 10px 15px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group {
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 60%;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid orange;
+    background-color: transparent;
+    outline: none;
+}
 .name {
     font-size: 24px;
     font-weight: bold;
